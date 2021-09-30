@@ -22,7 +22,7 @@ DESCRIBE address_book;
 INSERT INTO address_book VALUES  		
 ( 'Sippora', 'Toppo', '101 Abc', 'Ranchi', 'Jharkhand', 834004, 9876543219, 'abc.xyz@gmail.com' ),
 ( 'Ritu', 'Minz', '102 Abc', 'Ahemdabad','Gujarat', 110022, 9988776655, 'ritu123@gmail.com'),
-( 'Toshita', 'Chaudhari', '103 Pqr', 'Mumbai', 'Maharashtra', 400706, 7143298723, 'ativDavid@gmail.com');
+( 'Ativ', 'David', '103 Pqr', 'Mumbai', 'Maharashtra', 400706, 7143298723, 'ativDavid@gmail.com');
 
 select * from address_book;
 
@@ -51,7 +51,7 @@ ALTER TABLE address_book ADD address_book_type VARCHAR(50) AFTER address_book_na
 UPDATE address_book SET address_book_name='Anne Frank' WHERE first_name = 'Sippora';
 UPDATE address_book SET address_book_type='Family' WHERE first_name = 'Sippora';
 UPDATE address_book SET address_book_name='AddressBook 2020' WHERE first_name = 'Ativ';
-UPDATE address_book SET address_book_type='Teacher' WHERE first_name = 'Toshita
+UPDATE address_book SET address_book_type='Teacher' WHERE first_name = 'Darshana';
 
 #UC10
 SELECT address_book_type, count(*) FROM address_book GROUP BY address_book_type;
@@ -102,7 +102,7 @@ CREATE TABLE user_contact_type(
 );
 INSERT INTO user_details VALUES
 (1, 'Sippora', 'Toppo'),
-(2, 'Sanvita', 'Chaudhary'),
+(2, 'Toshita', 'Chaudhary'),
 (3, 'Bhavya', 'Saproo');
 
 
